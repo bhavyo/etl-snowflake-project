@@ -31,7 +31,7 @@ print(df)
 #Normalise empty strings
 df["NAME"] = df["NAME"].str.strip()
 df["NAME"] = df["NAME"].replace({"N/A":None, "n/a":None, "null":None, "":None})
-df["NAME"] = df["NAME"].str.title()
+
 
 #Standardize Department Names
 df["DEPARTMENT"]=df["DEPARTMENT"].str.title()
