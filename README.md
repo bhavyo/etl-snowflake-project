@@ -7,3 +7,9 @@ It includes:
 - Best practices followed for Data Engineering
 
 This project is a part of my learning path to become a Data Engineer.
+
+## Orchestration
+
+The pipeline is orchestrated using Snowflake Tasks with dependency chaining:
+RAW → CLEAN → CURATED
+Tasks are defined in a dedicated TASKS schema and executed in sequence to ensure data consistency.
